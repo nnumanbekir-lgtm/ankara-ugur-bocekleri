@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Uğur Böcekleri Anaokulu · Yaşamkent, Ankara</title>
+<meta name="description" content="Özel Ankara Uğur Böcekleri Anaokulu – 2009'dan beri Yaşamkent'te. İngiliz müfredatı, iki ana dil, anadili İngilizce öğretmenler.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600;700;800&family=Figtree:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#C8262B; --red-d:#9C1C20; --purple:#7A4AA6; --orange:#E8892A; --blue:#2593B8; --green:#6BA53A; --yellow:#F2C230;
+  --navy:#183B4E; --navy-l:#E5EFF3;
+  --paper:#FFFCF7; --cream:#FFF5E9; --line:#EDE1D0; --ink:#21232B; --muted:#565A66;
+  --r:18px; --r-s:10px;
+  --shadow:0 2px 0 rgba(33,35,43,.05),0 12px 30px -14px rgba(33,35,43,.22);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--yellow);color:var(--ink)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+input,textarea,select{caret-color:var(--red)}
+[hidden]{display:none!important}
+.ph{background:#ffe15a;color:var(--ink);padding:0 .25em;border-radius:4px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+h1,h2,h3{font-family:Grandstander,system-ui,sans-serif;line-height:1.12;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4.2vw,44px);margin-top:.2em;margin-bottom:.35em}
+h3{font-size:22px}
+p{margin:0 0 1em}
+a{color:var(--red-d)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.measure{max-width:64ch}
+section{padding:96px 0 64px}
+.en{color:var(--muted);font-weight:500;font-size:.62em;display:block;margin-top:.25em;font-family:Figtree,system-ui,sans-serif;letter-spacing:0}
+
+.preview{background:var(--ink);color:#fff;font-size:14px;text-align:center;padding:10px 16px;line-height:1.45}
+.preview b{color:#ffe15a}
+
+.nav{position:sticky;top:0;z-index:20;background:rgba(255,252,247,.95);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand b{font:800 19px/1 Grandstander,system-ui,sans-serif;display:block}
+.brand small{font-size:12px;color:var(--muted)}
+.navlinks{display:flex;gap:4px}
+.navlinks a{color:var(--ink);text-decoration:none;font-weight:700;font-size:15px;padding:12px;border-radius:999px;transition:background .15s}
+.navlinks a:hover{background:var(--cream)}
+@media (max-width:880px){.navlinks{display:none}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;font:800 16px/1 Figtree,system-ui,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .12s,background .15s,box-shadow .15s}
+.btn:active{transform:translateY(1px) scale(.98)}
+.btn-p{background:var(--red);color:#fff;box-shadow:0 4px 0 var(--red-d)}
+.btn-p:hover{background:#D52E33}
+.btn-p:active{box-shadow:0 2px 0 var(--red-d)}
+.btn-s{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-s:hover{background:var(--ink);color:#fff}
+.nav .btn{min-height:44px;padding:0 18px;font-size:15px}
+
+/* hero */
+.hero{padding:60px 0 76px;background:var(--cream);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.since{display:inline-flex;align-items:center;gap:8px;font-weight:800;color:var(--red-d);margin-bottom:14px}
+.hero h1{font-size:clamp(40px,6vw,66px);font-weight:800}
+.hero h1 .c1{color:var(--purple)} .hero h1 .c2{color:var(--blue)}
+.hero .lead{font-size:19px;color:var(--muted);margin:18px 0 26px;max-width:50ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:28px;font-size:15px;color:var(--muted)}
+.facts span{display:inline-flex;align-items:center;gap:8px}
+.hero-bug{justify-self:center;width:min(360px,100%)}
+@media (max-width:880px){.hero .wrap{grid-template-columns:1fr}.hero-bug{width:220px;order:-1}}
+
+/* puzzle */
+.pz-box{margin-top:28px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:start}
+.board{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:20px;touch-action:none}
+.board svg.bug{display:block;width:100%;height:auto}
+.slot{position:absolute;width:19%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:14px;border:3px dashed currentColor;opacity:.55;transition:opacity .2s,transform .2s}
+.slot.hot{opacity:1;transform:translate(-50%,-50%) scale(1.08)}
+.slot.done{border:0;opacity:1}
+.slot .pc{width:100%;height:100%}
+.tray{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:16px;min-height:76px}
+.piece{width:68px;height:68px;padding:0;border:0;background:none;cursor:grab;touch-action:none;border-radius:14px;transition:transform .15s}
+.piece:hover{transform:translateY(-3px) rotate(-4deg)}
+.piece:active{cursor:grabbing}
+.piece svg,.slot svg{width:100%;height:100%;display:block;filter:drop-shadow(0 3px 0 rgba(0,0,0,.12))}
+.drag-ghost{position:fixed;z-index:100;width:76px;height:76px;pointer-events:none;transform:translate(-50%,-50%) rotate(-6deg)}
+.pz-hint{font-size:14px;color:var(--muted);text-align:center;margin:10px 0 0}
+.info{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:var(--shadow);min-height:100%}
+.info .tag{display:inline-block;font-weight:800;font-size:14px;padding:4px 12px;border-radius:999px;color:#fff;margin-bottom:12px}
+.info h3{font-size:28px;margin-bottom:8px}
+.info ul{padding-left:1.1em;margin:.4em 0 0}
+.progress{display:flex;gap:6px;margin-top:20px}
+.progress i{flex:1;height:8px;border-radius:999px;background:var(--line);transition:background .3s}
+.bug.fly{animation:fly 1.6s ease-in-out 2}
+@keyframes fly{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px) rotate(-3deg)}}
+@media (max-width:860px){.pz-box{grid-template-columns:1fr}}
+
+/* bilingual day */
+.day-sec{background:var(--navy);color:#fff}
+.day-sec h2{color:#fff}
+.day-sec .measure{color:#D5E3EA}
+.lang{display:inline-flex;background:rgba(255,255,255,.1);border-radius:999px;padding:4px;margin:10px 0 24px}
+.lang button{min-height:44px;min-width:92px;border:0;border-radius:999px;background:transparent;color:#fff;font:800 16px Figtree,system-ui,sans-serif;cursor:pointer;transition:background .15s,color .15s}
+.lang button:hover{background:rgba(255,255,255,.12)}
+.lang button[aria-pressed="true"]{background:var(--yellow);color:var(--ink)}
+.timeline{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.timeline li{background:rgba(255,255,255,.07);border-radius:var(--r-s);padding:16px 16px 18px;border-top:4px solid var(--c)}
+.timeline .t{font-weight:800;font-size:15px;color:#BFD4DD}
+.timeline .w{font:700 21px/1.2 Grandstander,system-ui,sans-serif;margin-top:6px;transition:opacity .2s}
+.timeline .w.swap{opacity:0}
+@media (max-width:860px){.timeline{grid-template-columns:1fr 1fr}}
+@media (max-width:460px){.timeline{grid-template-columns:1fr}}
+
+/* program */
+.prog{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink);margin-top:28px}
+.prog > div{padding:24px 22px 8px 0}
+.prog > div + div{padding-left:22px;border-left:1px solid var(--line)}
+.prog .k{font-weight:800;margin:.35em 0 .6em}
+@media (max-width:820px){.prog{grid-template-columns:1fr}.prog > div + div{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
+
+/* trust */
+.trust-sec{background:var(--navy-l)}
+.trust{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;margin-top:26px;align-items:start}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:40px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid #C9DCE4}
+.tl li:first-child{padding-top:0}
+.tl b{display:block;font-size:18px;margin-bottom:2px}
+.facts-card{background:#fff;border-radius:var(--r);padding:24px;box-shadow:var(--shadow)}
+.facts-card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 18px}
+.facts-card dt{font-weight:800;color:var(--navy)}
+.facts-card dd{margin:0;min-width:0}
+@media (max-width:820px){.trust{grid-template-columns:1fr}}
+
+/* parents */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:26px}
+.three div{padding-top:16px;border-top:4px solid var(--c)}
+.three p{font-size:18px}
+.note{font-size:14px;color:var(--muted)}
+@media (max-width:820px){.three{grid-template-columns:1fr}}
+
+/* faq */
+.faq{margin-top:20px;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:18px 44px 18px 0;font:700 19px/1.3 Grandstander,system-ui,sans-serif;position:relative;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:12px;font:700 28px/1 Figtree,sans-serif;color:var(--red);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq summary:hover{color:var(--red-d)}
+.faq details p{padding:0 0 18px;max-width:68ch}
+
+/* contact */
+.contact-sec{background:var(--cream)}
+.contact{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;margin-top:24px}
+.info-c dt{font-weight:800;margin-top:16px}
+.info-c dd{margin:2px 0 0}
+form{background:#fff;border-radius:var(--r);padding:26px;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
+form .full{grid-column:1/-1}
+label{font-weight:700;font-size:15px;display:block;margin-bottom:5px}
+input,select,textarea{width:100%;font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid #DCCFBD;border-radius:var(--r-s);background:var(--paper);color:var(--ink);min-height:48px}
+input:focus,select:focus,textarea:focus{border-color:var(--blue);outline:none;box-shadow:0 0 0 3px rgba(37,147,184,.18)}
+textarea{min-height:96px;resize:vertical}
+.kvkk{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--muted)}
+.kvkk input{width:22px;min-height:22px;height:22px;margin-top:2px;accent-color:var(--red);flex:none}
+.msg{border-radius:var(--r-s);padding:12px 14px;background:var(--navy-l);color:var(--navy);font-weight:700}
+@media (max-width:820px){.contact{grid-template-columns:1fr}form{grid-template-columns:1fr}}
+
+footer{background:var(--ink);color:#D3D5DC;padding:40px 0;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 40px;justify-content:space-between}
+footer a{color:#FFD77A}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="preview"><b>Önizleme.</b> Bu sayfa Uğur Böcekleri Anaokulu için hazırlanmış taslak bir tasarımdır. Sarı işaretli bilgiler sizin onayınızla güncellenecektir.</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="pcs" d="M14 10h22c-4-12 20-12 16 0h22a4 4 0 0 1 4 4v22c12-4 12 20 0 16v22a4 4 0 0 1-4 4H52c4 12-20 12-16 0H14a4 4 0 0 1-4-4V52c-12 4-12-20 0-16V14a4 4 0 0 1 4-4z"/>
+  </defs>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Uğur Böcekleri ana sayfa">
+      <svg width="42" height="42" viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="19" fill="#fff" stroke="#C8262B" stroke-width="3"/><circle cx="21" cy="24" r="10" fill="#C8262B"/><circle cx="21" cy="13" r="5" fill="#21232B"/><path d="M21 14v20" stroke="#21232B" stroke-width="1.6"/><circle cx="16.5" cy="22" r="2" fill="#21232B"/><circle cx="25.5" cy="22" r="2" fill="#21232B"/><circle cx="17" cy="28.5" r="1.7" fill="#21232B"/><circle cx="25" cy="28.5" r="1.7" fill="#21232B"/></svg>
+      <span><b>Uğur Böcekleri</b><small>Anaokulu · Yaşamkent</small></span>
+    </a>
+    <nav class="navlinks" aria-label="Bölümler">
+      <a href="#yapboz">Bizi tanıyın</a>
+      <a href="#iki-dil">İki dilde bir gün</a>
+      <a href="#program">Program</a>
+      <a href="#guven">Güven</a>
+      <a href="#sss">SSS</a>
+    </nav>
+    <a class="btn btn-p" href="#iletisim">Ön kayıt</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="since"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 21h18M5 21V10l7-6 7 6v11M10 21v-5h4v5"/></svg>2009'dan beri Yaşamkent'te</p>
+      <h1>İki dilde <span class="c1">düşünen</span>, sevgiyle <span class="c2">büyüyen</span> çocuklar.</h1>
+      <p class="lead">Uğur Böcekleri, Çankaya Yaşamkent'te özel bir anaokulu. İngiliz müfredatıyla, Türkçe ve İngilizceyi ana dil gibi yaşatan bir okul günü ve anadili İngilizce öğretmenler.</p>
+      <div class="cta">
+        <a class="btn btn-p" href="#iletisim">Ön kayıt formunu doldurun</a>
+        <a class="btn btn-s" href="https://www.google.com/maps/search/?api=1&query=Ankara%20U%C4%9Fur%20B%C3%B6cekleri%20Anaokulu%20Ya%C5%9Famkent" target="_blank" rel="noopener">Okulu ziyaret edin</a>
+      </div>
+      <div class="facts">
+        <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#183B4E" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Hafta içi 07.30–18.30</span>
+        <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#183B4E" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Yaşamkent, Çankaya / Ankara</span>
+        <span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#183B4E" stroke-width="2" stroke-linecap="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Millî Eğitim Bakanlığı'na bağlı özel anaokulu</span>
+      </div>
+    </div>
+    <svg class="hero-bug" viewBox="0 0 240 240" aria-hidden="true">
+      <circle cx="120" cy="120" r="112" fill="#fff" stroke="#C8262B" stroke-width="10"/>
+      <circle cx="120" cy="120" r="98" fill="none" stroke="#C8262B" stroke-width="2"/>
+      <g transform="translate(64 64) scale(.7)"><use href="#pcs" fill="#7A4AA6"/></g>
+      <g transform="translate(118 64) scale(.7)"><use href="#pcs" fill="#E8892A"/></g>
+      <g transform="translate(64 118) scale(.7)"><use href="#pcs" fill="#2593B8"/></g>
+      <g transform="translate(118 118) scale(.7)"><use href="#pcs" fill="#6BA53A"/></g>
+      <circle cx="120" cy="66" r="18" fill="#C8262B"/>
+      <circle cx="113" cy="62" r="4" fill="#fff"/><circle cx="127" cy="62" r="4" fill="#fff"/>
+      <circle cx="113" cy="62" r="2" fill="#21232B"/><circle cx="127" cy="62" r="2" fill="#21232B"/>
+      <path d="M112 50c-4-10-10-14-16-14M128 50c4-10 10-14 16-14" stroke="#21232B" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="96" cy="36" r="4" fill="#21232B"/><circle cx="144" cy="36" r="4" fill="#21232B"/>
+      <path id="arc" d="M62 196 Q120 222 178 196" fill="none"/>
+      <text font-family="Grandstander, sans-serif" font-weight="700" font-size="13" fill="#21232B"><textPath href="#arc" startOffset="50%" text-anchor="middle">“sevgiyle büyürüz biz”</textPath></text>
+    </svg>
+  </div>
+</section>
+
+<section id="yapboz">
+  <div class="wrap">
+    <h2>Logomuzdaki yapbozu tamamlayın</h2>
+    <p class="measure">Uğur böceğimiz beş parçadan oluşuyor; her parça okulumuzun bir yanını anlatıyor. Parçaları böceğin üzerine sürükleyin ya da dokunun.</p>
+    <div class="pz-box">
+      <div>
+        <div class="board" id="board">
+          <svg class="bug" id="bug" viewBox="0 0 300 300" aria-hidden="true">
+            <ellipse cx="150" cy="176" rx="118" ry="108" fill="#F7E9E6"/>
+            <circle cx="150" cy="60" r="30" fill="#C8262B"/>
+            <circle cx="139" cy="54" r="6" fill="#fff"/><circle cx="161" cy="54" r="6" fill="#fff"/>
+            <circle cx="139" cy="55" r="3" fill="#21232B"/><circle cx="161" cy="55" r="3" fill="#21232B"/>
+            <path d="M140 68q10 7 20 0" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M136 34c-6-14-16-20-26-20M164 34c6-14 16-20 26-20" stroke="#21232B" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <circle cx="108" cy="13" r="6" fill="#21232B"/><circle cx="192" cy="13" r="6" fill="#21232B"/>
+            <path d="M40 150l-26-12M38 200l-28 4M58 248l-22 20M260 150l26-12M262 200l28 4M242 248l22 20" stroke="#21232B" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+          <div class="slot" data-k="0" style="left:35%;top:45%;color:#7A4AA6"></div>
+          <div class="slot" data-k="1" style="left:65%;top:45%;color:#E8892A"></div>
+          <div class="slot" data-k="2" style="left:35%;top:72%;color:#2593B8"></div>
+          <div class="slot" data-k="3" style="left:65%;top:72%;color:#6BA53A"></div>
+          <div class="slot" data-k="4" style="left:50%;top:88%;color:#C9A21E;width:15%"></div>
+        </div>
+        <div class="tray" id="tray" aria-label="Yapboz parçaları"></div>
+        <p class="pz-hint" id="pz-hint">Parçayı böceğin üzerindeki aynı renkli yere bırakın.</p>
+      </div>
+      <div class="info" aria-live="polite">
+        <span class="tag" id="i-tag" style="background:#C8262B">Başlayın</span>
+        <h3 id="i-title">Bir parça seçin</h3>
+        <div id="i-body"><p>Her parça yerine oturduğunda burada o konuyu anlatıyoruz. Beşi tamamlanınca uğur böceğimiz uçuyor.</p></div>
+        <div class="progress" id="progress"><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="day-sec" id="iki-dil">
+  <div class="wrap">
+    <h2>İki dilde bir gün</h2>
+    <p class="measure">"Dual Mother Tongue" bizde günün her anında iki dilin birlikte yaşanması demek. Dili değiştirin, günün aynı anlarını İngilizce okuyun.</p>
+    <div class="lang" role="group" aria-label="Dil">
+      <button type="button" data-l="tr" aria-pressed="true">Türkçe</button>
+      <button type="button" data-l="en" aria-pressed="false">English</button>
+    </div>
+    <ol class="timeline" id="tl"></ol>
+    <p class="note" style="color:#BFD4DD;margin-top:18px"><span class="ph">Saatler örnektir; okulun gerçek gün akışıyla güncellenecek.</span></p>
+  </div>
+</section>
+
+<section id="program">
+  <div class="wrap">
+    <h2>Programımız</h2>
+    <p class="measure">İngiliz müfredatı çerçevesinde, Millî Eğitim okul öncesi programıyla birlikte.</p>
+    <div class="prog">
+      <div>
+        <h3>Yaş grupları</h3>
+        <p class="k" style="color:var(--purple)"><span class="ph">2 – 6 yaş</span></p>
+        <p>Küçük yaştan itibaren alışmaya, büyüklerde ilkokula hazırlığa ağırlık veren sınıflar.</p>
+        <p><span class="ph">Sınıf ve grup büyüklükleri</span></p>
+      </div>
+      <div>
+        <h3>İngilizce</h3>
+        <p class="k" style="color:var(--blue)">Anadili İngilizce öğretmenlerle</p>
+        <p>Konuşma (speaking) çalışmaları, şarkılar ve oyunlarla günün içinde İngilizce.</p>
+        <p><span class="ph">Günlük İngilizce saati</span></p>
+      </div>
+      <div>
+        <h3>Atölyeler</h3>
+        <p class="k" style="color:var(--green)">Elle, deneyerek</p>
+        <p>Bilim atölyesinde her çocuk kendi filtre düzeneğini kuruyor; uzun–kısa, büyük–küçük gibi kavramları dokunarak öğreniyoruz.</p>
+        <p><span class="ph">Diğer branşlar: müzik, drama, spor…</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust-sec" id="guven">
+  <div class="wrap">
+    <h2>İçiniz rahat olsun diye</h2>
+    <p class="measure">Bir veli okul ararken önce bunları sorar. Cevaplarımız burada.</p>
+    <div class="trust">
+      <ul class="tl">
+        <li><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#183B4E" stroke-width="1.8" stroke-linecap="round"><path d="M3 21h18M5 21V10l7-6 7 6v11"/></svg>
+          <div><b>17 yıllık okul, müstakil bina</b>2009'dan beri aynı sevgiyle. <span class="ph">Bahçe, sınıf sayısı, oyun alanları</span></div></li>
+        <li><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#183B4E" stroke-width="1.8" stroke-linecap="round"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg>
+          <div><b>Temizlik ve titizlik</b>Velilerimizin en çok övdüğü konulardan biri hijyen. <span class="ph">Temizlik düzeni</span></div></li>
+        <li><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#183B4E" stroke-width="1.8" stroke-linecap="round"><path d="M4 11h16M6 11V8a6 6 0 0 1 12 0v3M5 11l1 9h12l1-9"/></svg>
+          <div><b>Kendi mutfağımız</b>Yemekler okulda, aşçımızın elinden. <span class="ph">Menü nasıl paylaşılıyor?</span></div></li>
+        <li><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#183B4E" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+          <div><b>Gelişim portfolyosu</b>Çocuğunuzun yıl boyunca yaptıkları bir portfolyoda birikiyor. <span class="ph">Veli bilgilendirme sıklığı</span></div></li>
+        <li><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#183B4E" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg>
+          <div><b>Güvenlik</b><span class="ph">Giriş-çıkış kontrolü, kamera, çocuğu kimin alabileceği</span></div></li>
+      </ul>
+      <div class="facts-card">
+        <h3 style="margin-bottom:14px">Kısaca</h3>
+        <dl>
+          <dt>Açılış</dt><dd>2009</dd>
+          <dt>Bağlı olduğu</dt><dd>Millî Eğitim Bakanlığı</dd>
+          <dt>Müfredat</dt><dd>British Curriculum + MEB okul öncesi</dd>
+          <dt>Diller</dt><dd>Türkçe ve İngilizce</dd>
+          <dt>Saatler</dt><dd>Hafta içi 07.30–18.30</dd>
+          <dt>Öğretmenler</dt><dd><span class="ph">Öğretmen sayısı, anadili İngilizce öğretmen sayısı</span></dd>
+          <dt>Servis</dt><dd><span class="ph">Var mı, hangi bölgeler?</span></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="veliler">
+  <div class="wrap">
+    <h2>Velilerin en çok söylediği üç şey</h2>
+    <div class="three">
+      <div style="--c:var(--purple)"><p>Zamanla bir aileye dönüşen, sıcak ve sevgi dolu bir okul.</p></div>
+      <div style="--c:var(--orange)"><p>Çocuklarla gerçek bir bağ kuran, ilgili ve sabırlı öğretmenler.</p></div>
+      <div style="--c:var(--blue)"><p>Temizliğe ve hijyene gösterilen titizlik, içi rahat bırakan bir ortam.</p></div>
+    </div>
+    <p class="note" style="margin-top:22px">Google'daki veli yorumlarından derlenmiştir.</p>
+  </div>
+</section>
+
+<section id="sss" style="padding-top:40px">
+  <div class="wrap">
+    <h2>Sık sorulanlar</h2>
+    <div class="faq">
+      <details><summary>Kaç yaşından itibaren alıyorsunuz?</summary><p><span class="ph">Kabul yaşı ve tuvalet eğitimi şartı</span></p></details>
+      <details><summary>Çocuğum hiç İngilizce bilmiyor, sorun olur mu?</summary><p>Hayır. İki dil günün akışı içinde, oyunla birlikte geliyor. <span class="ph">Uyum sürecinde nasıl ilerliyorsunuz?</span></p></details>
+      <details><summary>"British Curriculum" ne demek?</summary><p><span class="ph">Hangi çerçeveyi izliyorsunuz, MEB programıyla nasıl birleşiyor?</span></p></details>
+      <details><summary>Hangi saatlerde açıksınız?</summary><p>Hafta içi 07.30–18.30. Hafta sonu kapalıyız.</p></details>
+      <details><summary>Servis var mı?</summary><p><span class="ph">Servis bölgeleri ve ücreti</span></p></details>
+      <details><summary>Ücretler ne kadar?</summary><p><span class="ph">Aylık ücret, kayıt dönemi, kardeş indirimi</span> Detaylar için formu doldurun, size yazalım.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="contact-sec" id="iletisim">
+  <div class="wrap">
+    <h2>Tanışalım</h2>
+    <p class="measure">Formu doldurun; mesajınız WhatsApp'tan bize ulaşır, size yazarak dönelim. Okulu görmek isterseniz bir ziyaret günü belirleriz.</p>
+    <div class="contact">
+      <div class="info-c">
+        <dl>
+          <dt>Adres</dt><dd>Yaşamkent Mah. 3066. Sok. No:20<br>Çankaya / Ankara</dd>
+          <dt>Telefon</dt><dd><a href="tel:+903122402140">0312 240 21 40</a> · <a href="tel:+905301709416">0530 170 94 16</a></dd>
+          <dt>WhatsApp</dt><dd><a href="https://wa.me/message/BTW6SEZ25YM3M1" target="_blank" rel="noopener">WhatsApp'tan yazın</a></dd>
+          <dt>Instagram</dt><dd><a href="https://www.instagram.com/ankaraugurboceklerianaokulu/" target="_blank" rel="noopener">@ankaraugurboceklerianaokulu</a></dd>
+          <dt>Çalışma saatleri</dt><dd>Hafta içi 07.30–18.30</dd>
+        </dl>
+        <p style="margin-top:20px"><a class="btn btn-s" href="https://www.google.com/maps/search/?api=1&query=Ankara%20U%C4%9Fur%20B%C3%B6cekleri%20Anaokulu%20Ya%C5%9Famkent" target="_blank" rel="noopener">Haritada açın</a></p>
+      </div>
+      <form id="form" novalidate>
+        <div><label for="f-veli">Adınız soyadınız</label><input id="f-veli" name="veli" autocomplete="name" required></div>
+        <div><label for="f-tel">Telefonunuz</label><input id="f-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required></div>
+        <div><label for="f-cocuk">Çocuğunuzun adı</label><input id="f-cocuk" name="cocuk" required></div>
+        <div><label for="f-yas">Yaşı ya da doğum tarihi</label><input id="f-yas" name="yas" required></div>
+        <div class="full"><label for="f-konu">Konu</label>
+          <select id="f-konu" name="konu">
+            <option>Ön kayıt</option>
+            <option>Okul ziyareti</option>
+            <option>Ücret ve servis bilgisi</option>
+            <option>Diğer</option>
+          </select></div>
+        <div class="full"><label for="f-not">Notunuz</label><textarea id="f-not" name="not" placeholder="Başlangıç tarihi, sorularınız…"></textarea></div>
+        <label class="kvkk full"><input type="checkbox" id="f-kvkk" required> <span>Bilgilerimin ön kayıt ve iletişim amacıyla işlenmesine izin veriyorum. <span class="ph">KVKK aydınlatma metni</span></span></label>
+        <div class="full"><button class="btn btn-p" type="submit">Mesajı WhatsApp'tan gönderin</button></div>
+        <div class="full msg" id="f-msg" hidden></div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b style="color:#fff;font:800 20px Grandstander,sans-serif">Özel Ankara Uğur Böcekleri Anaokulu</b><br>2009'dan beri · Yaşamkent, Çankaya / Ankara</div>
+    <div><a href="tel:+903122402140">0312 240 21 40</a> · <a href="https://www.instagram.com/ankaraugurboceklerianaokulu/" target="_blank" rel="noopener">Instagram</a></div>
+  </div>
+</footer>
+
+<script>
+var WHATSAPP=''; // örn. 905xxxxxxxxx
+
+/* yapboz */
+var P=[
+  {c:'#7A4AA6',tag:'British Curriculum',t:'İngiliz müfredatı',b:'<p>Okul öncesini İngiliz müfredatının yaklaşımıyla, Millî Eğitim programıyla birlikte yürütüyoruz.</p><ul><li><span class="ph">Hangi çerçeve, nasıl uygulanıyor</span></li></ul>'},
+  {c:'#E8892A',tag:'Dual Mother Tongue',t:'İki ana dil',b:'<p>Türkçe ve İngilizce, ders saatinde değil günün içinde: karşılamada, oyunda, sofrada.</p><ul><li><span class="ph">Günde kaç saat İngilizce</span></li></ul>'},
+  {c:'#2593B8',tag:'Native Speaker Teachers',t:'Anadili İngilizce öğretmenler',b:'<p>Konuşma (speaking) çalışmalarını anadili İngilizce olan öğretmenlerimizle yapıyoruz.</p><ul><li><span class="ph">Öğretmen sayısı ve deneyimi</span></li></ul>'},
+  {c:'#6BA53A',tag:'Atölyeler',t:'Bilim ve keşif',b:'<p>Bilim atölyesinde her çocuk kendi filtre düzeneğini kuruyor. Uzun–kısa gibi kavramları da elleriyle sınıflandırarak öğreniyorlar.</p>'},
+  {c:'#E0B21C',tag:'Since 2009',t:'Sevgiyle büyürüz biz',b:'<p>2009\'dan beri Yaşamkent\'te. Logomuzdaki sözümüz, okulumuzun ta kendisi.</p>'}
+];
+var board=document.getElementById('board'),tray=document.getElementById('tray'),slots=[].slice.call(board.querySelectorAll('.slot')),placed=0;
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function pc(c){return '<svg viewBox="-6 -6 96 96" aria-hidden="true"><use href="#pcs" fill="'+c+'"/></svg>'}
+P.forEach(function(p,k){
+  var b=document.createElement('button');b.type='button';b.className='piece';b.dataset.k=k;
+  b.setAttribute('aria-label',p.t+' parçasını yerleştir');b.innerHTML=pc(p.c);
+  b.addEventListener('pointerdown',function(e){startDrag(e,b)});
+  b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();place(k,b)}});
+  tray.appendChild(b);
+});
+function startDrag(e,b){
+  e.preventDefault();var k=+b.dataset.k,moved=false,sx=e.clientX,sy=e.clientY;
+  var g=document.createElement('div');g.className='drag-ghost';g.innerHTML=pc(P[k].c);
+  function mv(ev){
+    if(!moved&&Math.hypot(ev.clientX-sx,ev.clientY-sy)>6){moved=true;document.body.appendChild(g);b.style.opacity=.25}
+    if(moved){g.style.left=ev.clientX+'px';g.style.top=ev.clientY+'px';slots[k].classList.toggle('hot',over(ev,slots[k]))}
+  }
+  function up(ev){
+    document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);
+    g.remove();b.style.opacity='';slots[k].classList.remove('hot');
+    if(!moved||over(ev,slots[k]))place(k,b);
+    else{document.getElementById('pz-hint').textContent='Bu parça '+P[k].t.toLowerCase()+' yerine gidiyor, aynı renkli yeri arayın.'}
+  }
+  document.addEventListener('pointermove',mv);document.addEventListener('pointerup',up);
+}
+function over(e,el){var r=el.getBoundingClientRect(),pad=24;return e.clientX>r.left-pad&&e.clientX<r.right+pad&&e.clientY>r.top-pad&&e.clientY<r.bottom+pad}
+function place(k,b){
+  var s=slots[k];s.classList.add('done');s.innerHTML=pc(P[k].c);b.remove();placed++;
+  document.getElementById('i-tag').textContent=P[k].tag;document.getElementById('i-tag').style.background=P[k].c;
+  document.getElementById('i-title').textContent=P[k].t;document.getElementById('i-body').innerHTML=P[k].b;
+  var bars=document.querySelectorAll('#progress i');for(var i=0;i<placed;i++)bars[i].style.background='#C8262B';
+  var hint=document.getElementById('pz-hint');
+  if(placed===P.length){hint.textContent='Tamamlandı! Uğur böceğimiz uçuşa hazır.';if(!reduce)document.getElementById('bug').classList.add('fly')}
+  else hint.textContent='Harika. '+(P.length-placed)+' parça kaldı.';
+}
+
+/* iki dilde bir gün */
+var D=[
+  {t:'07.30',c:'#C8262B',tr:'Günaydın! Karşılama',en:'Good morning! Welcome'},
+  {t:'<span class="ph">08.30</span>',c:'#E8892A',tr:'Kahvaltı',en:'Breakfast'},
+  {t:'<span class="ph">09.30</span>',c:'#2593B8',tr:'Daire zamanı ve konuşma',en:'Circle time & speaking'},
+  {t:'<span class="ph">10.30</span>',c:'#6BA53A',tr:'Bilim atölyesi',en:'Science workshop'},
+  {t:'<span class="ph">12.00</span>',c:'#E0B21C',tr:'Öğle yemeği',en:'Lunch'},
+  {t:'<span class="ph">13.00</span>',c:'#7A4AA6',tr:'Dinlenme ve kitap',en:'Rest & story time'},
+  {t:'<span class="ph">15.00</span>',c:'#2593B8',tr:'Bahçe ve serbest oyun',en:'Outdoor & free play'},
+  {t:'18.30',c:'#C8262B',tr:'Görüşmek üzere!',en:'See you tomorrow!'}
+];
+var tl=document.getElementById('tl'),L='tr';
+tl.innerHTML=D.map(function(d){return '<li style="--c:'+d.c+'"><div class="t">'+d.t+'</div><div class="w">'+d.tr+'</div></li>'}).join('');
+[].forEach.call(document.querySelectorAll('.lang button'),function(btn){
+  btn.addEventListener('click',function(){
+    if(btn.dataset.l===L)return;L=btn.dataset.l;
+    [].forEach.call(document.querySelectorAll('.lang button'),function(x){x.setAttribute('aria-pressed',x===btn)});
+    var ws=tl.querySelectorAll('.w');
+    [].forEach.call(ws,function(w,i){w.classList.add('swap');setTimeout(function(){w.textContent=D[i][L];w.classList.remove('swap')},reduce?0:160+i*40)});
+    tl.lang=L;
+  });
+});
+
+/* form */
+document.getElementById('form').addEventListener('submit',function(e){
+  e.preventDefault();var f=this,m=document.getElementById('f-msg');
+  if(!f.checkValidity()){m.hidden=false;m.style.background='#FBE7E8';m.style.color='#9C1C20';
+    m.textContent='Lütfen tüm alanları doldurup onay kutusunu işaretleyin.';return}
+  var t='Merhaba, web sitenizden yazıyorum.\nVeli: '+f.veli.value+'\nTelefon: '+f.tel.value+'\nÇocuk: '+f.cocuk.value+' ('+f.yas.value+')\nKonu: '+f.konu.value+(f.not.value?'\nNot: '+f.not.value:'');
+  m.hidden=false;m.style.background='';m.style.color='';
+  if(WHATSAPP){window.open('https://wa.me/'+WHATSAPP+'?text='+encodeURIComponent(t),'_blank');m.textContent='WhatsApp açılıyor…'}
+  else{m.textContent='Önizleme: WhatsApp numarası eklendiğinde bu mesaj doğrudan okula gidecek.'}
+});
+</script>
+</body>
+</html>
